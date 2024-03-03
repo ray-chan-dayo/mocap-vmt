@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" media="all" href="../css/osc-view.css"></link>
+
+<canvas id="canvas" width="128px" height="72px"></canvas>
+<br>
+<p>This example shows you the contents of the selected part of your display.
+    Click the Start Capture button to begin.</p>
+<p><button id="start">Start Capture</button>&nbsp;<button id="stop">Stop Capture</button></p>
+<!--<button id="kill">kill</button>
+<video id="video" autoplay></video>-->
+<br>
+
+<div id="toolbar">
+    <label for="portSelector">Serial port</label>:
+    <select id="portSelector" size="1">
+    </select>
+    <span id="udpStatus"></span>
+</div>
+
+<div id="messageArea">
+    <p id="messageLabel">OSC Message:</p>
+    <pre id="message"></pre>
+</div>
+
+<!--<script src="https://cdn.jsdelivr.net/npm/gpu.js@latest/dist/gpu-browser.min.js"></script>-->
+<script src="../node_modules/osc/dist/osc-chromeapp.js"></script>
+<script src="../js/app.js"></script>
